@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sicko | Ubicación</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+  />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-xl">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            src="../assets/sicko.png"
+            class="logotipoHeader"
+            alt="Logotipo Sicko"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >INICIO</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PRODUCTOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">REMERAS</a></li>
+                <li><a class="dropdown-item" href="#">BUZOS</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">POSTERS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link paginaSeleccionada" href="./ubicacion.html">UBICACIÓN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./preventa.html">PREVENTA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main id="intro" class="paddingBottom">
+      <h1 class="intro_titulo  animate__animated animate__fadeInDown">UBICACIÓN</h1>
+      <div class="paddingBottom"></div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d13136.189946984401!2d-58.3888002!3d-34.6029607!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m5!1s0x95bccb7a24a71961%3A0x19e141f5f9f18810!2sSavage%20Moda%2C%20Lavalle%2C%20Buenos%20Aires!3m2!1d-34.6028038!2d-58.388944499999994!4m0!5e0!3m2!1ses!2sar!4v1659033410784!5m2!1ses!2sar"
+        class="mapaUbicacion"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </main>
+
+    <footer id="footer" class="footerUbicacion">
+      <p>&copy; since 2021</p>
+      <div class="paddingBottom"></div>
+    </footer>
+  </body>
+</html>

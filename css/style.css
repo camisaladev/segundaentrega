@@ -221,7 +221,26 @@ p {
   text-align: center;
 }
 
+.nav-link {
+  color: white;
+}
 
+.nav-link:hover {
+  color: grey;
+  transition: all .3s;
+}
+
+.dropdown-menu {
+  background-color: rgb(15, 15, 15);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.paginaSeleccionada {
+  color: rgb(194, 194, 194);
+}
 /* =================================Media queries================================= */
 @media screen and (max-width: 375px) {
   .logotipoHeader {
