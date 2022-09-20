@@ -1,0 +1,30 @@
+/* Variables */
+:root {
+  --colorCorporativo: rgb(8, 8, 8);
+}
+
+/* Reset del HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Clase para agregar padding-bottom en caso de ser necesario */
+.paddingBottom {
+  padding-bottom: 10px;
+}
+
+/* Estilo de los <a> */
+.anchors {
+  color: white;
+  font-weight: 700;
+}
+
+.paginaSeleccionada {
+  color: rgb(194, 194, 194);
+}
+
+.bloqueTexto {
+  width: 80vw;
+}
