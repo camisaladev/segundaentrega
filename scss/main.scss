@@ -1,0 +1,880 @@
+/* Variables */
+:root {
+  --colorCorporativo: rgb(8, 8, 8);
+}
+
+@mixin anchoAlto($ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
+
+/* Reset del HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Clase para agregar padding-bottom en caso de ser necesario */
+.paddingBottom {
+  padding-bottom: 10px;
+}
+
+/* Estilo de los <a> */
+.anchors {
+  color: white;
+  font-weight: 700;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--colorCorporativo);
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: inline;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#header .header__Menu ul {
+  display: flex;
+  flex-direction: inline;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  list-style: none;
+  gap: 25px;
+  color: white;
+}
+
+#header .header__Menu ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.logotipoHeader {
+  width: 250px;
+}
+
+.imagenFondo {
+  min-width: 100vw;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro_titulo a {
+  color: white;
+  line-height: 1, 5;
+  font-style: italic;
+  text-align: center;
+}
+
+.flex-container {
+  width: 80vw;
+  height: 280px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container .flex-item .displayNone {
+  background-color: var(--colorCorporativo);
+  width: 222px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+/* productos primer fila */
+
+.imagenesCatalogo .responsive {
+  width: 223px;
+}
+
+.recuadrosProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+/* productos segunda fila */
+
+.recuadrosProductos2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.imagenesCatalogo2 {
+  width: 222px;
+  height: 250px;
+}
+
+h1 {
+  color: white;
+  line-height: 1, 5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+p {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+/* contacto */
+
+.seccionContacto {
+  color: white;
+  display: flex;
+  flex-direction: inline;
+}
+
+.footer {
+  width: 100vw;
+  height: 200px;
+  position: absolute;
+  background-color: rgb(15, 15, 15);
+}
+
+.contactoSicko {
+  background-image: url(../assets/naruto-panel.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapaUbicacion {
+  width: 60vw;
+}
+
+.form {
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(19, 19, 19);
+  width: 30%;
+  height: 60%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.campoFormulario {
+  width: 250px;
+  height: 30px;
+}
+
+.campoFormulario::placeholder {
+  text-align: center;
+}
+
+.bloqueTexto {
+  width: 80vw;
+}
+
+.footerUbicacion {
+  width: 100vw;
+  height: 200px;
+  margin-top: 50px;
+  background-color: var(--colorCorporativo);
+}
+
+/* GRID DE PRODUCTOS*/
+
+.sickoProductos {
+  width: auto;
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  gap: 20px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.grid-container img {
+  height: 258px;
+}
+
+.paddingBottom {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: grey;
+  transition: all 0.3s;
+}
+
+.dropdown-menu {
+  background-color: rgb(15, 15, 15);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.paginaSeleccionada {
+  color: rgb(194, 194, 194);
+}
+
+.animacionStock {
+  transition: letter-spacing 0.1s ease;
+}
+
+.animacionStock:hover {
+  letter-spacing: 1px;
+}
+
+.paddingBottom {
+  padding-bottom: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.anchors {
+  color: white;
+  font-weight: 700;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+header {
+  background-color: var(--colorCorporativo);
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: inline;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#header {
+  .header__Menu {
+    ul {
+      display: flex;
+      flex-direction: inline;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      list-style: none;
+      gap: 25px;
+      color: white;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+.logotipoHeader {
+  width: 250px;
+}
+.imagenFondo {
+  min-width: 100vw;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.intro_titulo {
+  a {
+    color: white;
+    line-height: 1, 5;
+    font-style: italic;
+    text-align: center;
+  }
+}
+.flex-container {
+  @include anchoAlto(80vw, 280px);
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  .flex-item {
+    .displayNone {
+      background-color: var(--colorCorporativo);
+      @include anchoAlto(222px, 250px);
+      margin-bottom: 10px;
+    }
+  }
+}
+.imagenesCatalogo {
+  .responsive {
+    width: 223px;
+  }
+}
+.recuadrosProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.recuadrosProductos2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+}
+.imagenesCatalogo2 {
+  @include anchoAlto(222px, 250px);
+}
+h1 {
+  color: white;
+  line-height: 1, 5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+p {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+.seccionContacto {
+  color: white;
+  display: flex;
+  flex-direction: inline;
+}
+.footer {
+  width: 100vw;
+  height: 200px;
+  position: absolute;
+  background-color: rgb(15, 15, 15);
+}
+.contactoSicko {
+  background-image: url(../assets/naruto-panel.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  @include anchoAlto(100vw, 100vh);
+  justify-content: center;
+  align-items: center;
+}
+.mapaUbicacion {
+  width: 60vw;
+}
+.form {
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(19, 19, 19);
+  @include anchoAlto(30%, 60%);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.campoFormulario {
+  @include anchoAlto(250px, 30px);
+  &::placeholder {
+    text-align: center;
+  }
+}
+.bloqueTexto {
+  width: 80vw;
+}
+.footerUbicacion {
+  @include anchoAlto(100vw, 200px);
+  margin-top: 50px;
+  background-color: var(--colorCorporativo);
+}
+.sickoProductos {
+  @include anchoAlto(auto, auto);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  gap: 20px;
+  justify-items: center;
+  justify-content: center;
+  height: 258px;
+}
+
+.nav-link {
+  color: white;
+  &:hover {
+    color: grey;
+    transition: all 0.3s;
+  }
+}
+.dropdown-menu {
+  background-color: rgb(15, 15, 15);
+}
+.dropdown-item {
+  color: white;
+}
+.paginaSeleccionada {
+  color: rgb(194, 194, 194);
+}
+
+// @mixin anchoAlto($ancho, $alto) {
+//     width: $ancho;
+//     height: $alto;
+// }
+
+// @mixin grid-item {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+// .grid-item-1 {
+// @include grid-item;
+// }
+
+// .grid-item-2 {
+// @include grid-item;
+// }
+
+// -grid-item-3 {
+// @include grid-item;
+// }
+
+/* =================================Media queries================================= */
+@media screen and (max-width: 375px) {
+	.logotipoHeader {
+	  width: 200px;
+	}
+  
+	.menuHeader {
+	  font-size: 8px;
+	}
+  
+	.menuHeader li {
+	  font-size: 10px;
+	}
+  
+	.header {
+	  display: flex;
+	  flex-direction: column;
+	}
+	.imagenFondo {
+	  @include anchoAlto(374px, auto);
+	}
+  
+	.intro_titulo {
+	  font-size: 12px;
+	}
+  
+	.imagenesCatalogo {
+	  image-orientation: left;
+	  width: 170px;
+	}
+  
+	.imagenesCatalogo2 {
+	  image-orientation: left;
+	  width: 170px;
+	}
+  
+	.flex-container {
+	  height: 225px;
+	}
+  
+	.displayNone {
+	  display: none;
+	  justify-content: center;
+	}
+  
+	.textoCatalogo {
+	  font-size: 15px;
+	}
+  
+	.textoCatalogo2 {
+	  font-size: 15px;
+	}
+  
+	.grid-container {
+	  grid-template-columns: repeat(2, 0.3fr);
+	  gap: 10px;
+	}
+  
+	.grid-item img {
+	  height: 150px;
+	}
+  
+	.mapaUbicacion {
+	  width: 90vw;
+	}
+  
+	.form {
+	  width: 70vw;
+	}
+  
+	.textarea {
+	  width: 60vw;
+	}
+  
+	.footer {
+	  height: auto;
+	}
+  }
+  
+  /*----------------425px---------------- */
+  
+  @media screen and (max-width: 425px) {
+	.logotipoHeader {
+	  width: 160px;
+	}
+  
+	.menuHeader {
+	  font-size: 8px;
+	}
+  
+	.menuHeader li {
+	  font-size: 10px;
+	}
+  
+	.header {
+	  display: flex;
+	  flex-direction: column;
+	}
+	.imagenFondo {
+	  @include anchoAlto(150px, auto);
+	}
+  
+	.intro_titulo {
+	  font-size: 20px;
+	}
+  
+	.imagenesCatalogo {
+	  image-orientation: left;
+	  width: 170px;
+	}
+  
+	.imagenesCatalogo2 {
+	  image-orientation: center;
+	  width: 200px;
+	}
+  
+	.flex-container {
+	  height: 100px;
+	}
+  
+	.displayNone {
+	  display: none;
+	  justify-content: center;
+	}
+  
+	.textoCatalogo {
+	  font-size: 15px;
+	}
+  
+	.textoCatalogo2 {
+	  font-size: 15px;
+	}
+  
+	.grid-container {
+	  grid-template-columns: repeat(2, 0.3fr);
+	  gap: 10px;
+	}
+  
+	.grid-item img {
+	  height: 150px;
+	}
+  
+	.mapaUbicacion {
+	  width: 90vw;
+	}
+  
+	.form {
+	  width: 70vw;
+	}
+  
+	.textarea {
+	  width: 60vw;
+	}
+  
+	.footer {
+	  width: 100%;
+	  height: auto;
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	}
+  }
+  
+  .imagenFondo {
+	  @include anchoAlto(300px, auto);
+  }
+  
+  /* ---------------- 768px ---------------- */
+  
+  @media screen and (max-width: 768px) {
+	.logotipoHeader {
+	  width: 200px;
+	}
+  
+	.menuHeader {
+	  font-size: 8px;
+	}
+  
+	.menuHeader li {
+	  font-size: 10px;
+	}
+  
+	.header {
+	  display: flex;
+	  flex-direction: column;
+	}
+	.imagenFondo {
+	  @include anchoAlto(374px, auto);
+	}
+  
+	.intro_titulo {
+	  font-size: 12px;
+	}
+  
+	.imagenesCatalogo {
+	  image-orientation: left;
+	  width: 170px;
+	}
+  
+	.imagenesCatalogo2 {
+	  image-orientation: left;
+	  width: 170px;
+	}
+  
+	.flex-container {
+	  height: 225px;
+	}
+  
+	.displayNone {
+	  display: none;
+	  justify-content: center;
+	}
+  
+	.textoCatalogo {
+	  font-size: 15px;
+	}
+  
+	.textoCatalogo2 {
+	  font-size: 15px;
+	}
+  
+	.grid-container {
+	  grid-template-columns: repeat(2, 0.3fr);
+	  gap: 10px;
+	}
+  
+	.grid-item img {
+	  height: 150px;
+	}
+  
+	.mapaUbicacion {
+	  width: 90vw;
+	}
+  
+	.form {
+	  width: 70vw;
+	}
+  
+	.textarea {
+	  width: 60vw;
+	}
+  
+	.footer {
+	  height: auto;
+	}
+  }
+  
+  /* ---------------- 1024px ---------------- */
+  
+  @media screen and (max-width: 1024px) {
+	.logotipoHeader {
+	  width: 150px;
+	}
+  
+	.menuHeader {
+	  font-size: 8px;
+	}
+  
+	.menuHeader li {
+	  font-size: 10px;
+	}
+  
+	.header {
+	  display: flex;
+	  flex-direction: column;
+	}
+	.imagenFondo {
+	  width: 300px;
+	  height: auto;
+	}
+  
+	.intro_titulo {
+	  font-size: 27px;
+	}
+  
+	.imagenesCatalogo {
+	  image-orientation: left;
+	  width: 220px;
+	  float: left;
+	}
+  
+	.imagenesCatalogo2 {
+	  image-orientation: left;
+	  width: 220px;
+	}
+  
+	.flex-container {
+	  height: 225px;
+	}
+  
+	.displayNone {
+	  display: none;
+	  justify-content: center;
+	}
+  
+	.textoCatalogo {
+	  font-size: 15px;
+	}
+  
+	.textoCatalogo2 {
+	  font-size: 15px;
+	}
+  
+	.grid-container {
+	  grid-template-columns: repeat(2, 0.3fr);
+	  gap: 10px;
+	}
+  
+	.grid-item img {
+	  height: 150px;
+	}
+  
+	.mapaUbicacion {
+	  width: 90vw;
+	}
+  
+	.form {
+	  width: 70vw;
+	}
+  
+	.textarea {
+	  width: 60vw;
+	}
+  
+	.footer {
+	  height: auto;
+	}
+  }
+  
+  /* ---------------- 1042px ---------------- */
+  
+  @media screen and (max-width: 1024px) {
+	.logotipoHeader {
+	  width: 650px;
+	}
+  
+	.menuHeader {
+	  font-size: 10px;
+	}
+  
+	.menuHeader li {
+	  font-size: 10px;
+	}
+  
+	.header {
+	  display: flex;
+	  flex-direction: column;
+	}
+	.imagenFondo {
+	  @include anchoAlto(400px, auto);
+	}
+  
+	.intro_titulo {
+	  font-size: 27px;
+	}
+  
+	.imagenesCatalogo {
+	  image-orientation: left;
+	  width: 220px;
+	  float: left;
+	}
+  
+	.imagenesCatalogo2 {
+	  image-orientation: left;
+	  width: 220px;
+	}
+  
+	.flex-container {
+	  height: 225px;
+	}
+  
+	.displayNone {
+	  display: none;
+	  justify-content: center;
+	}
+  
+	.textoCatalogo {
+	  font-size: 15px;
+	}
+  
+	.textoCatalogo2 {
+	  font-size: 15px;
+	}
+  
+	.grid-container {
+	  grid-template-columns: repeat(2, 0.3fr);
+	  gap: 10px;
+	}
+  
+	.grid-item img {
+	  height: 150px;
+	}
+  
+	.mapaUbicacion {
+	  width: 90vw;
+	}
+  
+	.form {
+	  width: 70vw;
+	}
+  
+	.textarea {
+	  width: 60vw;
+	}
+  
+	.footer {
+	  height: auto;
+	}
+  }
+  
