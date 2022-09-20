@@ -1,8 +1,9 @@
-@import './utilities/mixins';
-@import './layout/navbar';
-@import './sections/contacto';
-@import './utilities/reset-variables';
-@import './utilities/mediaquery';
+@import "./utilities/mixins";
+@import "./layout/navbar";
+@import './sections/index';
+@import "./sections/contacto";
+@import "./utilities/reset-variables";
+@import "./utilities/mediaquery";
 
 body {
   background-color: black;
@@ -34,10 +35,6 @@ header {
   color: white;
 }
 
-.imagenFondo {
-  min-width: 100vw;
-}
-
 #intro {
   display: flex;
   flex-direction: column;
@@ -47,13 +44,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.intro_titulo a {
-  color: white;
-  line-height: 1, 5;
-  font-style: italic;
-  text-align: center;
 }
 
 .flex-container {
@@ -114,67 +104,6 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
-}
-/* contacto */
-
-.seccionContacto {
-  color: white;
-  display: flex;
-  flex-direction: inline;
-}
-
-.footer {
-  width: 100vw;
-  height: 200px;
-  position: absolute;
-  background-color: rgb(15, 15, 15);
-}
-
-.contactoSicko {
-  background-image: url(../assets/naruto-panel.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
-.mapaUbicacion {
-  width: 60vw;
-}
-
-.form {
-  display: flex;
-  flex-flow: column;
-  background-color: rgb(19, 19, 19);
-  width: 30%;
-  height: 60%;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.campoFormulario {
-  width: 250px;
-  height: 30px;
-}
-
-.campoFormulario::placeholder {
-  text-align: center;
-}
-
-.bloqueTexto {
-  width: 80vw;
-}
-
-.footerUbicacion {
-  width: 100vw;
-  height: 200px;
-  margin-top: 50px;
-  background-color: var(--colorCorporativo);
 }
 
 /* GRID DE PRODUCTOS*/
@@ -248,9 +177,6 @@ header {
     }
   }
 }
-.imagenFondo {
-  min-width: 100vw;
-}
 #intro {
   display: flex;
   flex-direction: column;
@@ -260,14 +186,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.intro_titulo {
-  a {
-    color: white;
-    line-height: 1, 5;
-    font-style: italic;
-    text-align: center;
-  }
 }
 .flex-container {
   @include anchoAlto(80vw, 280px);
@@ -325,47 +243,11 @@ p {
   flex-direction: inline;
 }
 .footer {
-  width: 100vw;
-  height: 200px;
+  @include anchoAlto(100vw, 200px);
   position: absolute;
   background-color: rgb(15, 15, 15);
 }
-.contactoSicko {
-  background-image: url(../assets/naruto-panel.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  @include anchoAlto(100vw, 100vh);
-  justify-content: center;
-  align-items: center;
-}
-.mapaUbicacion {
-  width: 60vw;
-}
-.form {
-  display: flex;
-  flex-flow: column;
-  background-color: rgb(19, 19, 19);
-  @include anchoAlto(30%, 60%);
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-.campoFormulario {
-  @include anchoAlto(250px, 30px);
-  &::placeholder {
-    text-align: center;
-  }
-}
-.bloqueTexto {
-  width: 80vw;
-}
-.footerUbicacion {
-  @include anchoAlto(100vw, 200px);
-  margin-top: 50px;
-  background-color: var(--colorCorporativo);
-}
+
 .sickoProductos {
   @include anchoAlto(auto, auto);
 }

@@ -1,0 +1,5 @@
+.footer {
+  @include anchoAlto(100vw, 200px);
+  position: absolute;
+  background-color: rgb(15, 15, 15);
+}

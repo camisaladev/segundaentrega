@@ -1,0 +1,39 @@
+.imagenFondo {
+  min-width: 100vw;
+}
+
+.intro_titulo {
+  a {
+    color: white;
+    line-height: 1, 5;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.recuadrosProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+/* productos segunda fila */
+
+.recuadrosProductos2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.imagenesCatalogo {
+  .responsive {
+    width: 223px;
+  }
+}
+
+.imagenesCatalogo2 {
+  @include anchoAlto(222px, 250px)
+}

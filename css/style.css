@@ -17,6 +17,36 @@
 .paginaSeleccionada {
   color: #c2c2c2; }
 
+.imagenFondo {
+  min-width: 100vw; }
+
+.intro_titulo a {
+  color: white;
+  line-height: 1, 5;
+  font-style: italic;
+  text-align: center; }
+
+.recuadrosProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; }
+
+/* productos segunda fila */
+.recuadrosProductos2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vw; }
+
+.imagenesCatalogo .responsive {
+  width: 223px; }
+
+.imagenesCatalogo2 {
+  width: 222px;
+  height: 250px; }
+
 /* contacto */
 .seccionContacto {
   color: white;
@@ -59,9 +89,6 @@
 
 .campoFormulario::placeholder {
   text-align: center; }
-
-.bloqueTexto {
-  width: 80vw; }
 
 .footerUbicacion {
   width: 100vw;
@@ -356,9 +383,6 @@ header {
   text-decoration: none;
   color: white; }
 
-.imagenFondo {
-  min-width: 100vw; }
-
 #intro {
   display: flex;
   flex-direction: column;
@@ -368,12 +392,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
-
-.intro_titulo a {
-  color: white;
-  line-height: 1, 5;
-  font-style: italic;
-  text-align: center; }
 
 .flex-container {
   width: 80vw;
@@ -424,58 +442,6 @@ p {
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center; }
-
-/* contacto */
-.seccionContacto {
-  color: white;
-  display: flex;
-  flex-direction: inline; }
-
-.footer {
-  width: 100vw;
-  height: 200px;
-  position: absolute;
-  background-color: #0f0f0f; }
-
-.contactoSicko {
-  background-image: url(../assets/naruto-panel.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center; }
-
-.mapaUbicacion {
-  width: 60vw; }
-
-.form {
-  display: flex;
-  flex-flow: column;
-  background-color: #131313;
-  width: 30%;
-  height: 60%;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px; }
-
-.campoFormulario {
-  width: 250px;
-  height: 30px; }
-
-.campoFormulario::placeholder {
-  text-align: center; }
-
-.bloqueTexto {
-  width: 80vw; }
-
-.footerUbicacion {
-  width: 100vw;
-  height: 200px;
-  margin-top: 50px;
-  background-color: var(--colorCorporativo); }
 
 /* GRID DE PRODUCTOS*/
 .sickoProductos {
@@ -536,9 +502,6 @@ header {
     text-decoration: none;
     color: white; }
 
-.imagenFondo {
-  min-width: 100vw; }
-
 #intro {
   display: flex;
   flex-direction: column;
@@ -548,12 +511,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
-
-.intro_titulo a {
-  color: white;
-  line-height: 1, 5;
-  font-style: italic;
-  text-align: center; }
 
 .flex-container {
   width: 80vw;
@@ -612,45 +569,6 @@ p {
   height: 200px;
   position: absolute;
   background-color: #0f0f0f; }
-
-.contactoSicko {
-  background-image: url(../assets/naruto-panel.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center; }
-
-.mapaUbicacion {
-  width: 60vw; }
-
-.form {
-  display: flex;
-  flex-flow: column;
-  background-color: #131313;
-  width: 30%;
-  height: 60%;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px; }
-
-.campoFormulario {
-  width: 250px;
-  height: 30px; }
-  .campoFormulario::placeholder {
-    text-align: center; }
-
-.bloqueTexto {
-  width: 80vw; }
-
-.footerUbicacion {
-  width: 100vw;
-  height: 200px;
-  margin-top: 50px;
-  background-color: var(--colorCorporativo); }
 
 .sickoProductos {
   width: auto;
