@@ -9,10 +9,9 @@
 
   .menuHeader {
     font-size: 10px;
-  }
-
-  .menuHeader li {
-    font-size: 10px;
+    li {
+      font-size: 10px;
+    }
   }
 
   .header {
@@ -100,8 +99,7 @@
     flex-direction: column;
   }
   .imagenFondo {
-    width: 300px;
-    height: auto;
+    @include anchoAlto(300px, auto)
   }
 
   .intro_titulo {
@@ -316,8 +314,7 @@
   }
 
   .footer {
-    width: 100%;
-    height: auto;
+    @include anchoAlto(100%, auto);
     position: absolute;
     bottom: 0;
     left: 0;

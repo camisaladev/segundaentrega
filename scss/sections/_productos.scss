@@ -1,0 +1,16 @@
+/* GRID DE PRODUCTOS*/
+
+.sickoProductos {
+  @include anchoAlto(auto, auto);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  gap: 20px;
+  justify-items: center;
+  justify-content: center;
+  img {
+    height: 258px;
+  }
+}

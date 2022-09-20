@@ -1,0 +1,9 @@
+.mapaUbicacion {
+  width: 60vw;
+}
+
+.footerUbicacion {
+  @include anchoAlto(100vw, 200px);
+  margin-top: 50px;
+  background-color: var(--colorCorporativo);
+}

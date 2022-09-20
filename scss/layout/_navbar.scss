@@ -4,11 +4,10 @@
 
 .nav-link {
   color: white;
-}
-
-.nav-link:hover {
-  color: grey;
-  transition: all 0.3s;
+  &:hover {
+    color: grey;
+    transition: all 0.3s;
+  }
 }
 
 .dropdown-menu {
@@ -17,8 +16,4 @@
 
 .dropdown-item {
   color: white;
-}
-
-.paginaSeleccionada {
-  color: rgb(194, 194, 194);
 }

@@ -1,6 +1,9 @@
 @import "./utilities/mixins";
 @import "./layout/navbar";
+@import "./layout/footer";
 @import './sections/index';
+@import './sections/productos';
+@import './sections/ubicacion';
 @import "./sections/contacto";
 @import "./utilities/reset-variables";
 @import "./utilities/mediaquery";
@@ -10,16 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  background-color: var(--colorCorporativo);
-  height: 150px;
-  padding: 10px;
-  display: flex;
-  flex-direction: inline;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
 
 #header .header__Menu ul {
   display: flex;
@@ -28,66 +21,14 @@ header {
   list-style: none;
   gap: 25px;
   color: white;
+  a {
+	text-decoration: none;
+	color: white;
+  }
 }
 
-#header .header__Menu ul a {
-  text-decoration: none;
-  color: white;
-}
-
-#intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 300px;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.flex-container {
-  width: 80vw;
-  height: 280px;
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-}
-.flex-container .flex-item .displayNone {
-  background-color: var(--colorCorporativo);
-  width: 222px;
-  height: 250px;
-  margin-bottom: 10px;
-}
 
 /* productos primer fila */
-
-.imagenesCatalogo .responsive {
-  width: 223px;
-}
-
-.recuadrosProductos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-/* productos segunda fila */
-
-.recuadrosProductos2 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100vw;
-}
-
-.imagenesCatalogo2 {
-  width: 222px;
-  height: 250px;
-}
 
 h1 {
   color: white;
@@ -99,30 +40,12 @@ h1 {
   padding-bottom: 30px;
 }
 
+
 p {
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
-}
-
-/* GRID DE PRODUCTOS*/
-
-.sickoProductos {
-  width: auto;
-  height: auto;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 25%);
-  gap: 20px;
-  justify-items: center;
-  justify-content: center;
-}
-
-.grid-container img {
-  height: 258px;
 }
 
 .paddingBottom {
@@ -132,25 +55,17 @@ p {
 
 .animacionStock {
   transition: letter-spacing 0.1s ease;
+  &:hover {
+	letter-spacing: 1px;
+  }
 }
 
-.animacionStock:hover {
-  letter-spacing: 1px;
-}
-
-.paddingBottom {
-  padding-bottom: 10px;
-  padding-bottom: 20px;
-  text-align: center;
-}
 .anchors {
   color: white;
   font-weight: 700;
 }
-body {
-  background-color: black;
-  overflow-x: hidden;
-}
+
+
 header {
   background-color: var(--colorCorporativo);
   height: 150px;
@@ -201,11 +116,6 @@ header {
     }
   }
 }
-.imagenesCatalogo {
-  .responsive {
-    width: 223px;
-  }
-}
 .recuadrosProductos {
   display: flex;
   flex-direction: column;
@@ -219,46 +129,13 @@ header {
   justify-content: center;
   width: 100vw;
 }
-.imagenesCatalogo2 {
-  @include anchoAlto(222px, 250px);
-}
-h1 {
-  color: white;
-  line-height: 1, 5;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
-  letter-spacing: 10px;
-  text-align: center;
-  padding-bottom: 30px;
-}
-p {
-  color: white;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-align: center;
-}
+
 .seccionContacto {
   color: white;
   display: flex;
   flex-direction: inline;
 }
-.footer {
-  @include anchoAlto(100vw, 200px);
-  position: absolute;
-  background-color: rgb(15, 15, 15);
-}
 
-.sickoProductos {
-  @include anchoAlto(auto, auto);
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 25%);
-  gap: 20px;
-  justify-items: center;
-  justify-content: center;
-  height: 258px;
-}
 
 .nav-link {
   color: white;

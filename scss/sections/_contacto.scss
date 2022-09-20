@@ -6,13 +6,6 @@
   flex-direction: inline;
 }
 
-.footer {
-  width: 100vw;
-  height: 200px;
-  position: absolute;
-  background-color: rgb(15, 15, 15);
-}
-
 .contactoSicko {
   background-image: url(../assets/naruto-panel.png);
   background-size: cover;
@@ -22,10 +15,6 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-}
-
-.mapaUbicacion {
-  width: 60vw;
 }
 
 .form {
@@ -43,15 +32,7 @@
 .campoFormulario {
   width: 250px;
   height: 30px;
-}
-
-.campoFormulario::placeholder {
-  text-align: center;
-}
-
-.footerUbicacion {
-  width: 100vw;
-  height: 200px;
-  margin-top: 50px;
-  background-color: var(--colorCorporativo);
+  &::placeholder {
+    text-align: center;
+  }
 }
