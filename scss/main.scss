@@ -48,11 +48,13 @@ p {
   text-align: center;
 }
 
+// Clase reutilizable para hacer paddingBottom
 .paddingBottom {
   padding-bottom: 20px;
   text-align: center;
 }
 
+// Animación texto stock
 .animacionStock {
   transition: letter-spacing 0.1s ease;
   &:hover {
@@ -60,6 +62,7 @@ p {
   }
 }
 
+// Clase reutilizable para anchors
 .anchors {
   color: white;
   font-weight: 700;
@@ -76,6 +79,7 @@ header {
   align-items: center;
   flex-direction: row;
 }
+
 #header {
   .header__Menu {
     ul {
@@ -92,6 +96,7 @@ header {
     }
   }
 }
+
 #intro {
   display: flex;
   flex-direction: column;
@@ -102,6 +107,7 @@ header {
   background-position: center;
   background-size: cover;
 }
+
 .flex-container {
   @include anchoAlto(80vw, 280px);
   display: flex;
@@ -116,6 +122,8 @@ header {
     }
   }
 }
+
+// Primer linea de recuadros productos
 .recuadrosProductos {
   display: flex;
   flex-direction: column;
@@ -123,30 +131,10 @@ header {
   align-items: center;
   width: 100vw;
 }
+// Segunda linea de recuadros productos
 .recuadrosProductos2 {
   display: flex;
   text-align: center;
   justify-content: center;
   width: 100vw;
-}
-
-.seccionContacto {
-  color: white;
-  display: flex;
-  flex-direction: inline;
-}
-
-
-.nav-link {
-  color: white;
-  &:hover {
-    color: grey;
-    transition: all 0.3s;
-  }
-}
-.dropdown-menu {
-  background-color: rgb(15, 15, 15);
-}
-.dropdown-item {
-  color: white;
 }

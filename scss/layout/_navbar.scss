@@ -1,7 +1,9 @@
+// Estilo logitpo sicko header
 .logotipoHeader {
   width: 250px;
 }
 
+// Links navbar
 .nav-link {
   color: white;
   &:hover {
@@ -10,10 +12,17 @@
   }
 }
 
+// Menú desplegable navbar
 .dropdown-menu {
   background-color: rgb(15, 15, 15);
 }
 
+// Items menú desplegable navbar
 .dropdown-item {
   color: white;
+}
+
+// Botón para mostrar y ocultar la navbar en dispositivos moviles
+.navbar-toggler {
+    background-color: white;
 }

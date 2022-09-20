@@ -13,6 +13,9 @@
 .dropdown-item {
   color: white; }
 
+.navbar-toggler {
+  background-color: white; }
+
 .footer {
   width: 100vw;
   height: 200px;
@@ -104,6 +107,11 @@
   height: 30px; }
   .campoFormulario::placeholder {
     text-align: center; }
+
+.seccionContacto {
+  color: white;
+  display: flex;
+  flex-direction: inline; }
 
 /* Variables */
 :root {
@@ -465,20 +473,3 @@ header {
   text-align: center;
   justify-content: center;
   width: 100vw; }
-
-.seccionContacto {
-  color: white;
-  display: flex;
-  flex-direction: inline; }
-
-.nav-link {
-  color: white; }
-  .nav-link:hover {
-    color: grey;
-    transition: all 0.3s; }
-
-.dropdown-menu {
-  background-color: #0f0f0f; }
-
-.dropdown-item {
-  color: white; }
